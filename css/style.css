@@ -1,0 +1,282 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+p {
+    font-size: 10px;
+}
+header {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+div.logo {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: #5D15D1;
+}
+div.logo > img {
+    width: 30px;
+    height: 30px;
+}
+
+section#orcamento {
+    background-image: url(../imgs/bahia.jpg);
+    background-size: cover;
+    padding: 50px 20px;
+}
+
+.topoForm {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5D15D1;
+    gap: 10px;
+}
+.topoForm > img {
+    width: 30px;
+    height: 30px;
+}
+.topoForm > h2 {
+    font-size: 15px;
+    color: white;
+}
+div.areaForm {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+div.formulario {
+    padding: 10px;
+}
+form {
+    color: #8F9092;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form2, .form2div, .form3, .form3div {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    background-color: #5D15D1;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+button:hover {
+    background-color: #46109e;
+}
+
+section#ofertas {
+    background-color: #EAEAEA;
+    padding: 20px;
+}
+
+.areaCards1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    min-height: 100px;
+}
+.esq, .dir {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.cardMenor {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cardNome {
+    background-color: rgba(47, 79, 79, 0.534);
+    color: white;
+    padding: 5px;
+}
+.cardNome > p {
+    margin: 0;
+}
+.card1 {
+    background-image: url(../imgs/rio.jpg);
+    background-size: cover;
+}
+.card2 {
+    background-image: url(../imgs/manaus.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card3 {
+    background-image: url(../imgs/saopaulo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card4 {
+    background-image: url(../imgs/niteroi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card5 {
+    background-image: url(../imgs/maranhao.jpg);
+    background-size: cover;
+}
+
+.areaCards2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.cardA {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.CardImg > img{
+    width: 100%;
+    display: flex;
+    flex: 1 1 auto;
+}
+.txtCard {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    padding: 10px;
+}
+.txtCard > h4, .txtCard > p {
+    margin: 0;
+}
+.txtCard > p{
+    color: #8F9092;
+}
+
+footer {
+    background-color: #5D15D1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.contato, .redes {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+}
+
+h5 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.rodapeLinhas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.rodapeLinhas > img {
+    width: 20px;
+    height: 20px;
+}
+.rodapeLinhas > p > a {
+    color: white;
+}
+
+@media screen and (min-width:540px){
+    header {
+        justify-content: flex-start;
+        padding-left: 50px;
+    }
+    section#orcamento {
+        padding: 100px 50px;
+    }
+    section#ofertas {
+        padding: 50px;
+    }
+    .form2, .form3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    .form2div, .form3div {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    h2, h3, h4 {
+        font-size: 25px;
+    }
+    p{
+        font-size: 20px;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width:1100px){
+    header {
+        justify-content: flex-start;
+        padding-left: 80px;
+    }
+    section#orcamento {
+        padding: 80px 80px;
+    }
+    section#ofertas {
+        padding: 80px;
+    }
+    .areaCards1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+    }
+    .cardMaior {
+        width: 505px;
+        height: 505px
+    }
+    .card1 {
+        width: 100%;
+        height: 100%;
+    }
+    .esq, .dir {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .cardm {
+        width: 250px;
+        height: 250px;
+        gap: 5px;
+    }
+    .cardMenor {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .cardA {
+        max-width: 500px;
+    }
+}
